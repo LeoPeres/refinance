@@ -12,7 +12,7 @@ export default function TransactionsPage() {
     <div className="min-h-screen">
       <Header title="Transacoes" />
 
-      <div className="p-6">
+      <div className="p-4 sm:p-6">
         <Card>
           <CardHeader>
             <CardTitle>Todas as Contas</CardTitle>

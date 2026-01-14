@@ -24,7 +24,7 @@ export function InvestmentChart({ data }: InvestmentChartProps) {
         <CardTitle>Evolucao do Patrimonio</CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="h-[300px]">
+        <div className="h-[250px] sm:h-[300px]">
           <ResponsiveContainer width="100%" height="100%">
             <AreaChart data={data}>
               <defs>

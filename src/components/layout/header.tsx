@@ -25,7 +25,7 @@ export function Header({ title }: HeaderProps) {
      window.matchMedia('(prefers-color-scheme: dark)').matches)
 
   return (
-    <header className="sticky top-0 z-30 flex h-16 items-center justify-between border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-6">
+    <header className="hidden lg:flex sticky top-0 z-30 h-16 items-center justify-between border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-6">
       <div className="flex items-center gap-3">
         <div className="h-8 w-1 rounded-full bg-gradient-to-b from-primary to-purple-600" />
         <h1 className="text-2xl font-bold">{title}</h1>

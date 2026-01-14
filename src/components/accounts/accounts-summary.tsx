@@ -69,7 +69,7 @@ export function AccountsSummary({
   ]
 
   return (
-    <div className="grid gap-4 md:grid-cols-5">
+    <div className="grid gap-3 grid-cols-2 sm:gap-4 md:grid-cols-5">
       {summaryItems.map((item) => (
         <Card
           key={item.label}

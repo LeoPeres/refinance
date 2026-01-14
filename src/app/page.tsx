@@ -19,7 +19,7 @@ export default function Dashboard() {
     <div className="min-h-screen">
       <Header title="Inicio" />
 
-      <div className="p-6 space-y-6">
+      <div className="p-4 sm:p-6 space-y-4 sm:space-y-6">
         <ZeGreeting balance={summary.balance} userName="Leonardo" />
 
         <SummaryCards
@@ -30,12 +30,12 @@ export default function Dashboard() {
           expensesChange={summary.expensesChange}
         />
 
-        <div className="grid gap-6 lg:grid-cols-3">
+        <div className="grid gap-4 sm:gap-6 lg:grid-cols-3">
           <BalanceChart data={monthlyData} />
           <ExpensesChart data={expensesByCategory} />
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid gap-4 sm:gap-6">
           <RecentTransactions transactions={recentTransactions} />
         </div>
       </div>

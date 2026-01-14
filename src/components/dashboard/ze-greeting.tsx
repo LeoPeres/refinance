@@ -37,8 +37,8 @@ export function ZeGreeting({ balance, userName = 'Leonardo' }: ZeGreetingProps) 
 
   return (
     <Card className="border-primary/20 bg-gradient-to-r from-primary/5 via-purple-600/5 to-primary/5">
-      <CardContent className="p-6">
-        <div className="flex items-start gap-4">
+      <CardContent className="p-4 sm:p-6">
+        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
           <div className="relative flex-shrink-0">
             <Image
               src="/ze-icon.svg"
@@ -52,19 +52,19 @@ export function ZeGreeting({ balance, userName = 'Leonardo' }: ZeGreetingProps) 
             </div>
           </div>
 
-          <div className="flex-1 min-w-0">
-            <div className="flex items-center gap-2 mb-1">
-              <h2 className="text-xl font-bold">
+          <div className="flex-1 min-w-0 text-center sm:text-left">
+            <div className="flex items-center justify-center sm:justify-start gap-2 mb-1">
+              <h2 className="text-lg sm:text-xl font-bold">
                 {greeting}, {userName}!
               </h2>
-              <span className="text-2xl">👋</span>
+              <span className="text-xl sm:text-2xl">👋</span>
             </div>
 
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
               {message}
             </p>
 
-            <div className="mt-4 flex items-center gap-4">
+            <div className="mt-3 sm:mt-4 flex items-center justify-center sm:justify-start gap-4">
               <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10">
                 <span className="text-xs text-muted-foreground">Seu patrimonio:</span>
                 <span className="text-sm font-bold text-primary">{formatCurrency(balance)}</span>

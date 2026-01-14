@@ -34,7 +34,7 @@ export function Sidebar() {
   const randomTip = tips[Math.floor(Math.random() * tips.length)]
 
   return (
-    <aside className="fixed left-0 top-0 z-40 h-screen w-64 border-r bg-background">
+    <aside className="hidden lg:block fixed left-0 top-0 z-40 h-screen w-64 border-r bg-background">
       <div className="flex h-20 items-center border-b px-4">
         <Link href="/" className="flex items-center gap-3">
           <div className="relative">

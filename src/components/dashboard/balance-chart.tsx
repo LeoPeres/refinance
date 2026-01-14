@@ -20,7 +20,7 @@ interface BalanceChartProps {
 
 export function BalanceChart({ data }: BalanceChartProps) {
   return (
-    <Card className="col-span-2">
+    <Card className="lg:col-span-2">
       <CardHeader>
         <CardTitle>Como suas financas evoluiram</CardTitle>
         <p className="text-sm text-muted-foreground">
@@ -28,7 +28,7 @@ export function BalanceChart({ data }: BalanceChartProps) {
         </p>
       </CardHeader>
       <CardContent>
-        <div className="h-[300px]">
+        <div className="h-[250px] sm:h-[300px]">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={data}>
               <CartesianGrid strokeDasharray="3 3" className="stroke-muted" />

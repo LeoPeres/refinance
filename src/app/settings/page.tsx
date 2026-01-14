@@ -9,7 +9,7 @@ export default function SettingsPage() {
     <div className="min-h-screen">
       <Header title="Configuracoes" />
 
-      <div className="p-6 space-y-6 max-w-4xl">
+      <div className="p-4 sm:p-6 space-y-4 sm:space-y-6 max-w-4xl">
         <ProfileSettings />
         <AppearanceSettings />
         <NotificationSettings />
