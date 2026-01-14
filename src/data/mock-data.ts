@@ -100,6 +100,10 @@ export const getRecentTransactions = (limit: number = 5): Transaction[] => {
     .slice(0, limit)
 }
 
+export const getTransactionById = (id: string): Transaction | undefined => {
+  return transactions.find(t => t.id === id)
+}
+
 export const accounts: Account[] = [
   {
     id: '1',
